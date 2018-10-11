@@ -102,7 +102,6 @@ runTower animCommands = do
         threadDelay (1000*150)
     -- send anim commands loop
     forkIO $ do 
-        getChar
         runAnimCommands (tail animCommands) cmdReq cmdResp
     towerAnimation cmdReq cmdResp
 
