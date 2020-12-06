@@ -43,8 +43,7 @@ pic1 = paintedPicture  twingling (translate (0, 0) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
 
-4)
-The same way we made the color dynamic, we can have a dynamic x and y position, which enables the movement of ellipse.
+4) he same way we made the color dynamic, we can have a dynamic x and y position, which enables the movement of ellipse.
 To move the ellipse in circle, try this
 
 ```
