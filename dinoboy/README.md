@@ -3,8 +3,9 @@
 
 <img src="dinoBoyDemo.gif" width="400">
 
-  This game is written Haskell language using reactive framework. The reactive framework
-I developed was inspired by book Haskell School of Expression by Paul Hudak and Conal Eliott
+  This game is writtenin Haskell language using reactive framework. The reactive framework
+I developed was inspired by book "Haskell School of Expression" by Paul Hudak and Conal Eliott
+(https://www.amazon.com/Haskell-School-Expression-Functional-Programming/dp/0521644089)
 
 For the graphics rendering I used SDL2 haskell bindings.
 
@@ -21,7 +22,8 @@ runReact "Reactive Game" pic1 resoures
 ```
 This picture will be a static at one place in red color. Now how to make it dynamic?
 
-2) Now to animate ellipse by shrink and grow, try this```
+2) To animate ellipse by shrink and grow, try this
+
 ```
 r1 = cos time
 r1 = sin time
@@ -40,6 +42,16 @@ r1 = sin time
 pic1 = paintedPicture  twingling (translate (0, 0) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
+
+4)
+The same way we made the color dynamic, we can have a dynamic x and y position, which enables the movement of ellipse.
+
+To move the ellipse in circle, try this
+x = cos time
+y = sin time
+r = 0.05
+pic1 = paintedPicture  twingling (translate (x, y) (ell r r) )
+runReact "Reactive Game" pic1 resoures
 
 Hope you liked this framework!. For any questions, send to s.muttath.d@gmail.com
 
