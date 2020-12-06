@@ -3,7 +3,7 @@
 
 <img src="dinoBoyDemo.gif" width="400">
 
-  This game is writtenin Haskell language using reactive framework. The reactive framework
+  This game is written in Haskell language following reactive design. The reactive framework
 I developed was inspired by book "Haskell School of Expression" by Paul Hudak and Conal Eliott
 (https://www.amazon.com/Haskell-School-Expression-Functional-Programming/dp/0521644089)
 
@@ -34,7 +34,7 @@ runReact "Reactive Game" pic1 resoures
 'time' is a behavior which represents current time in milli seconds. When we use
 cosine of time, we will have values betiween 0 and 1, which will be used in each iteration of the animation.
 
-3) Now to make more interesting, let us make the color of ellipse variying.
+3) Now to make more interesting, let us make the color of ellipse varying.
 The color will be changing in every 1.0 seond.
 ```
 twingling = red `switch` ( timer 1.0 `withElem_` cycle[red, yellow, blue ])
