@@ -15,6 +15,9 @@ The starting point of game is in TowerOfHanoi.hs file. First the program generat
 recursive algorithm.
 ```
 move d a b c = moveToAux ++ [moveDisk]++ moveToPeg
+    where moveToAux = move (d-1) a c b
+          moveDisk  = ( d,a,c,b )
+          moveToPeg = move (d-1) b a c
 ```
 Here (d, a, b. c ) is ( ( disk-to-move, from-peg, to-peg, using-auxilary-peg  )
 For example, to solve puzzle with 3 disks, algorithm produces the list  
