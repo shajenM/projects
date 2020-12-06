@@ -68,7 +68,6 @@ pic1 = paintedPicture  twingling (translate (x, y) (ell r r) )
 runReact "Reactive Game" pic1 resoures
 ```
 
-Hope you liked this framework!. For any questions, send to s.muttath.d@gmail.com
+Thanks for visiting this page!. Hope you liked this framework!. For any questions, send to s.muttath.d@gmail.com
 
-Thanks
 Shajen Muttath
