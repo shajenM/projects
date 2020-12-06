@@ -13,7 +13,7 @@ For the graphics rendering I used SDL2 haskell bindings.
 
 DinoBoyGame.hs contains logic for this game. All other files belongs to the game framework.
 
-All the components in the game is defined in the end as
+All the components in the game are defined at the end of DinoBoyGame.hs as
 ```
 game  = backGrd `over` boySprite `over` boxes `over` sounds `over` messages
 ```
