@@ -11,7 +11,9 @@ For the graphics rendering I used SDL2 haskell bindings.
 
 ## Design
 
-Module Hudak.hs has the Behavior features that user can use to build a game. Here is the sample usage.
+DinoBoyGame.hs contains logic for this game. All other files belongs to the game framework.
+
+Module Hudak.hs and Fal.hs have the Behavior features that user can use to build a game. Here is the sample usage.
 
 1) Show an ellipse at position (0,0) with radious r1 = 0.05 , r2 = 0.05
 ```
