@@ -13,6 +13,17 @@ For the graphics rendering I used SDL2 haskell bindings.
 
 DinoBoyGame.hs contains logic for this game. All other files belongs to the game framework.
 
+All the components in the game is defined in the end as
+```
+game  = backGrd `over` boySprite `over` boxes `over` sounds `over` messages
+```
+
+backGrd is a moving background picture
+boySprite is the picture of boy who reacts by jumping when space key is pressed.
+boxes are the objects moving from right to left at different speeds
+sounds are sounds produced when boy hit a box
+mesages are text messages on screen which are score and "you Died" message when hit.
+
 Module Hudak.hs and Fal.hs have the Behavior features that user can use to build a game. Here is the sample usage.
 
 1) Show an ellipse at position (0,0) with radious r1 = 0.05 , r2 = 0.05
