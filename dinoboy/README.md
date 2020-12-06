@@ -4,7 +4,7 @@
 <img src="dinoBoyDemo.gif" width="400">
 
   This game is written in Haskell language following reactive design. The reactive framework
-I developed was inspired by book "Haskell School of Expression" by Paul Hudak and Conal Eliott
+I developed was inspired by book "Haskell School of Expression" by Paul Hudak and Conal Elliott
 (https://www.amazon.com/Haskell-School-Expression-Functional-Programming/dp/0521644089)
 
 For the graphics rendering I used SDL2 haskell bindings.
