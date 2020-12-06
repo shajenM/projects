@@ -40,7 +40,7 @@ This picture will be a static at one place in red color. Now how to make it dyna
 
 ```
 r1 = cos time
-r1 = sin time
+r2 = sin time
 pic1 = paintedPicture  red (translate (0, 0) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
@@ -52,7 +52,7 @@ The color will be changing in every 1.0 seond.
 ```
 twingling = red `switch` ( timer 1.0 `withElem_` cycle[red, yellow, blue ])
 r1 = cos time
-r1 = sin time
+r2 = sin time
 pic1 = paintedPicture  twingling (translate (0, 0) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
