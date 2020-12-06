@@ -20,6 +20,7 @@ r2 = 0.05
 pic1 = paintedPicture  red (translate (0, 0) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
+'ell' draws an ellipse on screen. 'translate' draws at position (0, 0)
 This picture will be a static at one place in red color. Now how to make it dynamic?
 
 2) To animate ellipse by shrink and grow, try this
@@ -30,11 +31,11 @@ r1 = sin time
 pic1 = paintedPicture  red (translate (0, 0) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
-'time' is a behavior which represents current time in milli seocnds. when we use
-cos time will have values betiween 0 and 1, which will be used in each iteration of the animation.
+'time' is a behavior which represents current time in milli seconds. When we use
+cosine of time, we will have values betiween 0 and 1, which will be used in each iteration of the animation.
 
-3) Now to make more interesting, let us make the color of ellipse to variying colors.
-The color will be changing every 1.0 seonds.
+3) Now to make more interesting, let us make the color of ellipse variying.
+The color will be changing in every 1.0 seond.
 ```
 twingling = red `switch` ( timer 1.0 `withElem_` cycle[red, yellow, blue ])
 r1 = cos time
@@ -43,7 +44,7 @@ pic1 = paintedPicture  twingling (translate (0, 0) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
 
-4) he same way we made the color dynamic, we can have a dynamic x and y position, which enables the movement of ellipse.
+4) The same way we made the color dynamic, we can have dynamic x and y positions, which enables the movement of ellipse.
 To move the ellipse in circle, try this
 
 ```
