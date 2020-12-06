@@ -18,11 +18,11 @@ All the components in the game is defined in the end as
 game  = backGrd `over` boySprite `over` boxes `over` sounds `over` messages
 ```
 
-[ backGrd is a moving background picture
-[ boySprite is the picture of boy who reacts by jumping when space key is pressed.
-[ boxes are the objects moving from right to left at different speeds
-[ sounds are sounds produced when boy hit a box
-[ mesages are text messages on screen which are score and "you Died" message when hit.
+* backGrd is a moving background picture
+* boySprite is the picture of boy who reacts by jumping when space key is pressed.
+- boxes are the objects moving from right to left at different speeds
+- sounds are sounds produced when boy hit a box
+- mesages are text messages on screen which are score and "you Died" message when hit.
 
 Module Hudak.hs and Fal.hs have the Behavior features that user can use to build a game. Here is the sample usage.
 
