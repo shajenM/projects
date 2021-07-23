@@ -81,7 +81,8 @@ font30B = constB resFont30
 font20B = constB resFont20
 
 bg_image_name = strToTxt "open_field.jpg"
-boy_image_name = strToTxt "boy1.png"
+-- boy_image_name = strToTxt "boy1.png"
+boy_image_name = strToTxt "boy_anim.png"
 
 resBoyImage = BoyImage boy_image_name
 resBgImage  = BackGround bg_image_name

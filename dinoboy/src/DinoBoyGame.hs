@@ -64,7 +64,7 @@ boySound = boySound1 -- `over` boySound2
 -- boy sprite
 -- change skin at every given seconds
 changeSkinRate t = constB 0 `switch` ((timer t ) `withElem_`  cycle items ) where
-    items = map constB [0] -- [1,2,3,4,5,0]
+    items = map constB [1,2,3,4,5,0]
 
 boySkin = 0 `switch` (onGround .|. onAir) where
     onAir    = (keyPressed ' ') ->> changeSkinRate 0.2
@@ -75,7 +75,7 @@ faceLeft = constB True
 faceRight = constB False
 
 idleFace = faceLeft `switch` (timer 3 `withElem_`  cycle [faceLeft, faceRight])
-runningFace = faceLeft `switch` (timer 0.5 `withElem_`  cycle [faceLeft, faceRight])
+runningFace = faceRight
 
 boyFaceDir = faceRight `switch` (onIdle .|.onRunning) where
     onIdle    = whenIdle          ->> idleFace
