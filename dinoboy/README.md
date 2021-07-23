@@ -1,7 +1,7 @@
 
  #  DINO BOY
 
-<img src="dinoBoyDemo.gif" width="400">
+<img src="dinoBoyDemo2.gif" width="400">
 
   This game is written in Haskell language using functional reactive design. The reactive framework
 I developed is based on book "Haskell School of Expression" by Paul Hudak and Conal Elliott
