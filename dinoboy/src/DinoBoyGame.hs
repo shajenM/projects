@@ -1,14 +1,12 @@
+-- # DinoBoyGame
+-- # Author : Shajen Muttath
+-- # 
 module DinoBoyGame
-    ( rungame ) where
-
-import Fal
-import Picture
-import Region
-import UserEvent as UE
-import Util
+    (rungame) 
+where
+import Hudak.UserEvent as UE
 import Hudak
 
----
 -- game states
 data GameState =  
     Collision
@@ -190,6 +188,6 @@ messages = collisionMsg `over` scoreBorad
 
 game  = backGrd `over` boySprite `over` boxes `over` sounds `over` messages 
 
--- ---test game------------
+-- run game
 rungame = runReact  "Reactive Game" game resources
 
