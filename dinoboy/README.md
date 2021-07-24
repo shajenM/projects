@@ -1,5 +1,5 @@
 
- #  DINO BOY
+ #  Dino Boy
 
 <img src="dinoBoyDemo2.gif" width="400">
 
