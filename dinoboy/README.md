@@ -9,6 +9,10 @@ I developed is based on book "Haskell School of Expression" by Paul Hudak and Co
 
 For the graphics I used library SDL2 for haskell bindings.
 
+I use Ubuntu running on WSL2 Windows 10 for development. For code editing I use Visual Studio Code.
+It was not easy to develop graphical applications on WSL2. I used Xming for XWindow Server and Pulse Audio 
+for Sound Server.
+
 ## Design
 
 Entire game logic is in a single DinoBoyGame.hs. All other files belongs to the game framework.
