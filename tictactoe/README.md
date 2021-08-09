@@ -11,7 +11,7 @@ The TicTacToe board is made of list of 9 cells. Each cell has an id of values 0 
 ```
 0 - the initial unplayed state.
 1 - the cell is played by player 1. 
-2 - the call is played by player 2. 
+2 - the cell is played by player 2. 
 ```
 The cell id is used to access and update the cells on board.
 
