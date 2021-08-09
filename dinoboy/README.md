@@ -9,10 +9,6 @@ for the game I developed is based on book "Haskell School of Expression" by Paul
 
 For the graphics I used library SDL2 for haskell bindings.
 
-I use Ubuntu running on WSL2 Windows 10 for development. For code editing I use Visual Studio Code.
-It was not easy to develop graphical applications on WSL2. I used Xming for XWindow Server and Pulse Audio 
-for Sound Server.
-
 ## Design
 
 Entire game logic is in file DinoBoyGame.hs. Folder Hudak contains the reactive game framework.
@@ -83,6 +79,12 @@ r = sin time + 0.2
 pic1 = paintedPicture  twingling (translate (x, y) (ell r r) )
 runReact "Reactive Game" pic1 resoures
 ```
+
+## Development System
+Ubuntu 20.0 running on WSL2 Windows 10.
+Visual Studio Code for coding
+Xming for XWindow Server
+Pulse Audio for Sound Server.
 
 Thanks for visiting this page!. Hope you liked this framework!. For any questions, send to s.muttath.d@gmail.com
 
