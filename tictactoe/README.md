@@ -1,11 +1,11 @@
 # Tic Tac Toe
 
 <img src="tictactoedemo.gif" width="400">
-  This game is written in Haskell language using functional reactive design. The reactive framework
+  This game is written in Haskell language using functional reactive design.
 
 ## Design
 
-The game is in file src/testTicTac.hs which contains the Graphical components using Functional Reactive Framework. The file src/TicTacToe.hs contains the pure part, which has core logic, of the TicTacToe game.
+The starting point of game is in file src/testTicTac.hs which contains the Graphical components using Functional Reactive Framework. The file src/TicTacToe.hs contains the pure part, which has core logic, of the TicTacToe game.
 
 The TicTacToe board is made of list of 9 cells. Each cell has an id of values 0 to 8. Each cell can have three values 0, 1 or 2. These are the states of each cell.
 0 - the initial unplayed state.
