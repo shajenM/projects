@@ -16,6 +16,15 @@ The cell id is used to access and update the cells on board.
 In the Gui part, each cell is represented by a Gui Button. When user click left mouse button, the location is converted into cell id, which is used to update the board.
 The the color of each square are reactive values from the values in the cells of the board. The values are converted in to 3 colores, 0-Brown, 1- Yellow and 2-Blue.
 
+## Development System
+
+```
+Ubuntu 20.0 running on WSL2 Windows 10.
+Visual Studio Code for coding
+Xming for XWindow Server
+Pulse Audio for Sound Server.
+```
+
 Thanks for visiting this page!. Hope you liked this framework!. For any questions, send to s.muttath.d@gmail.com
 
 Shajen Muttath
