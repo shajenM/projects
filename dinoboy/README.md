@@ -31,7 +31,9 @@ game  = backGrd `over` boySprite `over` boxes `over` sounds `over` messages
 Module GameEngine.hs and Fal.hs have the features(Behaviors) that user can use to build a game.
 Here is the sample exmaple of using the framework:
 
+
 1) Draw an ellipse on screen at position (2,2) with radious r1 = 0.05 , r2 = 0.05
+<img src="demo_static_ellipse.gif" width="400">
 ```
 r1 = 0.05
 r2 = 0.05
@@ -42,7 +44,7 @@ runReact "Reactive Game" pic1 resoures
 This picture will be a static at one place in red color. Now how to make it dynamic?
 
 2) To animate ellipse by shrink and grow, try this
-
+<img src="demo_growing_ellipse.gif" width="400">
 ```
 r1 = cos time
 r2 = sin time
@@ -54,6 +56,7 @@ cosine of time, we will have values betiween 0 and 1, which will be used in each
 
 3) Now to make more interesting, let us make the color of ellipse varying.
 The color will be changing in every 1.0 seond.
+<img src="demo_twinkling_ellipse.gif" width="400">
 ```
 twinkling = red `switch` ( timer 1.0 `withElem_` cycle[red, yellow, blue ])
 r1 = cos time
@@ -64,7 +67,7 @@ runReact "Reactive Game" pic1 resoures
 
 4) The same way we can make the color dynamic, we can have dynamic x and y positions, which enables the movement of ellipse.
 To move the ellipse in circle, try this
-
+<img src="demo_circling_ellipse.gif" width="400">
 ```
 x = cos time
 y = sin time
