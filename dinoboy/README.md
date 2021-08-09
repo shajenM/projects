@@ -78,7 +78,7 @@ To move the ellipse in circle, try this
 ```
 x = cos time
 y = sin time
-r = 0.05
+r = sin time + 0.2
 pic1 = paintedPicture  twingling (translate (x, y) (ell r r) )
 runReact "Reactive Game" pic1 resoures
 ```
