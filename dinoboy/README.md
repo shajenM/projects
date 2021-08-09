@@ -81,11 +81,13 @@ runReact "Reactive Game" pic1 resoures
 ```
 
 ## Development System
+
+```
 Ubuntu 20.0 running on WSL2 Windows 10.
 Visual Studio Code for coding
 Xming for XWindow Server
 Pulse Audio for Sound Server.
-
+```
 Thanks for visiting this page!. Hope you liked this framework!. For any questions, send to s.muttath.d@gmail.com
 
 Shajen Muttath
