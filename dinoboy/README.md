@@ -27,7 +27,8 @@ game  = backGrd `over` boySprite `over` boxes `over` sounds `over` messages
 * boxes     - the objects moving from right to left at different speeds
 * sounds    - sounds produced when boy hit a box
 * mesages   - text messages on screen which are score and "you Died" message when hit.
-
+* 
+## Functional Reactive Framework for Graphics
 Module GameEngine.hs and Fal.hs have the features(Behaviors) that user can use to build a game.
 Here is the sample exmaple of using the framework:
 
