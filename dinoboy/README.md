@@ -3,8 +3,8 @@
 
 <img src="dinoBoyDemo2.gif" width="400">
 
-  This game is written in Haskell language using functional reactive design. The reactive framework
-I developed is based on book "Haskell School of Expression" by Paul Hudak and Conal Elliott
+  This game is written in Haskell language with functional reactive design. The reactive framework
+for the game I developed is based on book "Haskell School of Expression" by Paul Hudak and Conal Elliott
 (https://www.amazon.com/Haskell-School-Expression-Functional-Programming/dp/0521644089)
 
 For the graphics I used library SDL2 for haskell bindings.
@@ -15,20 +15,20 @@ for Sound Server.
 
 ## Design
 
-Entire game logic is in a single DinoBoyGame.hs. All other files belongs to the game framework.
+Entire game logic is in file DinoBoyGame.hs. Folder Hudak contains the reactive game framework.
 
 The components in the game are defined at the end of DinoBoyGame.hs as
 ```
 game  = backGrd `over` boySprite `over` boxes `over` sounds `over` messages
 ```
 
-* backGrd - is a moving background picture
-* boySprite - is the picture of boy who reacts by jumping when space key is pressed.
-- boxes - are the objects moving from right to left at different speeds
-- sounds - are sounds produced when boy hit a box
-- mesages - are text messages on screen which are score and "you Died" message when hit.
+* backGrd   - a moving background picture
+* boySprite - the picture of boy who reacts by jumping when space key is pressed.
+* boxes     - the objects moving from right to left at different speeds
+* sounds    - sounds produced when boy hit a box
+* mesages   - text messages on screen which are score and "you Died" message when hit.
 
-Module Hudak.hs and Fal.hs have the features(Behaviors) that user can use to build a game.
+Module GameEngine.hs and Fal.hs have the features(Behaviors) that user can use to build a game.
 Here is the sample exmaple of using the framework:
 
 1) Draw an ellipse on screen at position (2,2) with radious r1 = 0.05 , r2 = 0.05
