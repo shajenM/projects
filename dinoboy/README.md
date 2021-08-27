@@ -29,13 +29,16 @@ Module GameEngine.hs and Fal.hs have the features(Behaviors) that user can use t
 Here is the sample exmaple of using the framework:
 
 
-1) Draw an ellipse on screen at position (2,2) with radious r1 = 0.05 , r2 = 0.05
+1) Draw a red ellipse on screen at position (2,2) with radious r1 = 0.05 , r2 = 0.05
 <img src="demo_static_ellipse.gif" width="400">
 
 ```
 r1 = 0.05
 r2 = 0.05
-pic1 = paintedPicture  red (translate (2, 2) (ell r1 r2) )
+x  = 2.0
+y  = 2.0
+color = red
+pic1 = paintedPicture  color (translate (x, y) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
 
@@ -48,7 +51,10 @@ This picture will be a static at one place in red color. Now how to make it dyna
 ```
 r1 = cos time
 r2 = sin time
-pic1 = paintedPicture  red (translate (0, 0) (ell r1 r2) )
+x  = 2.0
+y  = 2.0
+color = red
+pic1 = paintedPicture color (translate (x, y) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
 
@@ -63,7 +69,10 @@ The color will be changing in every 1.0 seond.
 twinkling = red `switch` ( timer 1.0 `withElem_` cycle[red, yellow, blue ])
 r1 = cos time
 r2 = sin time
-pic1 = paintedPicture  twinkling (translate (0, 0) (ell r1 r2) )
+x  = 2.0
+y  = 2.0
+color = twinkling
+pic1 = paintedPicture color (translate (x, y) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
 
@@ -73,12 +82,17 @@ To move the ellipse in circle, try this
 <img src="demo_circling_ellipse.gif" width="400">
 
 ```
+r = sin time + 0.2
+r1 = r
+r2 = r
 x = cos time
 y = sin time
-r = sin time + 0.2
-pic1 = paintedPicture  twingling (translate (x, y) (ell r r) )
+color = twinkling
+pic1 = paintedPicture color (translate (x, y) (ell r1 r2) )
 runReact "Reactive Game" pic1 resoures
 ```
+
+Now we have a circling, shrink-growing and twinkling ellipse.
 
 ## Development System
 
